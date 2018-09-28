@@ -31,11 +31,14 @@ html, body{
     justify-content: center;
 }
 
-.break{
-    border-color:var(--text_color);
-    width:50%;
-    border-top: 1px;
+#beatles_heading{
+    position: absolute;
+    width: 40vmax;
+    padding:2em;
+
 }
+
+
 
 .sidebar{
     width: 100%;
