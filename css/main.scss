@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+:root{
+    --break_color:black;
+    --text_color:black;
+    --background_color:white;
+}
+
+html, body{
+    padding:0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background_color);
+}
+
+.wrapper{
+    background-color: var(--background_color);
+    height: 100%;
+}
+
+.title{
+    display: flex;
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    height: 30vh;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
+    //background-color: green;
+}
+
+#beatles_heading{
+    position: absolute;
+    width: 40vmax;
+
+}
+
+.break{
+    border-color:var(--break_color);
+    width:50%;
+
+
+    border-top: 1px;
+}
+
+.sidebar{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    //background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.name_titles{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text_color);
+}
+
+.img_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+
+.img_container{
+  //  grid-column: 2;
+    height: 15em;
+    padding: 2em;
+    width: auto;
+    border-radius: 50%;
+    justify-content: space-evenly;
+}
+
+
+#lennon_images, #mccartney_images, #harrison_images, #ringo_images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ @media only screen and(min-width: 850px){
+     .sidebar{
+         flex-flow: row;
+     }
+     .name_titles{
+         padding:1em;
+     }
+ }
+
+#lennon_images.hide-img_container .img_container { display: none; }
+#mccartney_images.hide-img_container .img_container { display: none; }
+#harrison_images.hide-img_container .img_container { display: none; }
+#ringo_images.hide-img_container .img_container { display: none; }

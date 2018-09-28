@@ -1,2 +1,2 @@
-# BeatlesPage
-Responsive page to view photographs of Beatles members
+# HtmlSkeleton
+empty html with sass and javascript linked for quicker project startups
