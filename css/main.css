@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 :root {
-  --break_color:black;
   --text_color:black;
   --background_color:white;
 }
@@ -24,7 +23,7 @@ html, body {
   display: flex;
   position: relative;
   padding-top: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   height: 30vh;
   width: 100vw;
   -webkit-box-align: center;
@@ -35,13 +34,8 @@ html, body {
           justify-content: center;
 }
 
-#beatles_heading {
-  position: absolute;
-  width: 40vmax;
-}
-
 .break {
-  border-color: var(--break_color);
+  border-color: var(--text_color);
   width: 50%;
   border-top: 1px;
 }
